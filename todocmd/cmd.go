@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/thestuti/devup/todo"
+	"github.com/soffyzen/devup/todo"
 )
 
 func AddTask(todos *todo.Todos, args []string) {

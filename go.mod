@@ -1,4 +1,4 @@
-module github.com/thestuti/devup
+module github.com/soffyzen/devup
 
 go 1.20
 

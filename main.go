@@ -82,9 +82,7 @@ func pomodoroRun() {
 	longBreakDuration := fs.Int("l", 15, "Long break duration (in minutes)")
 	taskName := fs.String("n", "Task", "Task name")
 
-	// Parse flags for the Pomodoro part
 	fs.Parse(os.Args[2:])
 
-	// Run the Pomodoro timer with the parsed flags
 	pomodoro.RunPomodoro(*workDuration, *shortBreakDuration, *longBreakDuration, *taskName)
 }
