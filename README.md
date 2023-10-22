@@ -16,12 +16,3 @@ git clone github.com/soffyzen/devup
 go run main.go
 
 ```
-
-<h2> Usage </h2> 
-
-| Flag | Description                           
-| ---- | ------------------------------------- 
-| -h   | Display help related to usage         
-| -u   | Extract images from the url           
-| -l   | Path where you want images to be stored
-| -f  | File where different urls are stored 
