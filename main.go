@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/soffyzen/devup/ascii"
 	"github.com/soffyzen/devup/pomodoro"
 	"github.com/soffyzen/devup/todo"
 	"github.com/soffyzen/devup/todocmd"
@@ -30,6 +31,9 @@ func Help() {
 	fmt.Println("    -s: Short break duration in minutes (default: 5)")
 	fmt.Println("    -l: Long break duration in minutes (default: 15)")
 	fmt.Println("    -n: Task name (default: 'Task')")
+	fmt.Println("")
+	fmt.Println("ASCII:")
+	fmt.Println("ascii")
 }
 
 func main() {
@@ -47,6 +51,8 @@ func main() {
 		todoRun()
 	case "pomodoro":
 		pomodoroRun()
+	case "ascii":
+		asciiRun()
 	default:
 		fmt.Println("Invalid command. Please use 'help' command to see available commands.")
 		os.Exit(1)
@@ -85,4 +91,8 @@ func pomodoroRun() {
 	fs.Parse(os.Args[2:])
 
 	pomodoro.RunPomodoro(*workDuration, *shortBreakDuration, *longBreakDuration, *taskName)
+}
+
+func asciiRun() {
+	ascii.AsciiRun()
 }
