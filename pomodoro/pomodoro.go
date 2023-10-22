@@ -43,7 +43,7 @@ func startTimer(duration int) {
 }
 
 func clearScreen() {
-	cmd := exec.Command("cmd", "/c", "cls")
+	cmd := exec.Command("cmd", "/c", "cls") // use clear instead of cls for unix like systems.
 	cmd.Stdout = os.Stdout
 	_ = cmd.Run()
 }

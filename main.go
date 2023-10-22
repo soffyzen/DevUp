@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/thestuti/devup/pomodoro"
-	"github.com/thestuti/devup/todo"
-	"github.com/thestuti/devup/todocmd"
+	"github.com/soffyzen/devup/pomodoro"
+	"github.com/soffyzen/devup/todo"
+	"github.com/soffyzen/devup/todocmd"
 )
 
 func Help() {
