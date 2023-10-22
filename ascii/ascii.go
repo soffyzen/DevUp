@@ -157,11 +157,9 @@ ZZZZZ `,
 
 	for i, char := range text {
 		if i > 0 {
-			// Add space between characters
 			asciiArt.WriteString("\n\n")
 		}
 
-		// Convert the character to uppercase
 		char = rune(strings.ToUpper(string(char))[0])
 		if ascii, found := artMap[char]; found {
 			asciiArt.WriteString(ascii)

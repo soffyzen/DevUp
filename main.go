@@ -13,8 +13,6 @@ import (
 
 func Help() {
 	fmt.Println("Welcome to devup CLI!")
-	fmt.Println("Usage: devup <app> <command> [arguments]")
-	fmt.Println()
 	fmt.Println("Available commands:")
 	fmt.Println()
 	fmt.Println("Todo App:")
